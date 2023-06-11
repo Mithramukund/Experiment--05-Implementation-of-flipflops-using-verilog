@@ -118,7 +118,7 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 
-
+```
 module theq(S,R,Clock,Q,Qbar);
 input S,R,Clock;
 output Q,Qbar;
@@ -128,7 +128,7 @@ nand (Y,R,Clock);
 nand (Q,X,Qbar);
 nand(Qbar,Y,Q);
 endmodule
-
+```
 
 ### RTL LOGIC FOR FLIPFLOPS 
 
@@ -140,7 +140,7 @@ endmodule
 
 
 ### PROGRAM 2
-
+```
 
 module theq(j,k,clk,q,qbar);
 input j,k,clk;
@@ -151,7 +151,7 @@ nand(y,k,clk,q);
 nand(q,x,qbar);
 nand(qbar,y,q);
 endmodule
-
+```
 ### RTL LOGIC FOR FLIPFLOPS 
 
 ![SS-2](https://user-images.githubusercontent.com/93427208/168047690-0cfe25d6-907e-47c5-b767-324332c6ac3b.png)
@@ -162,7 +162,7 @@ endmodule
 
 ### PROGRAM 3
 
-
+```
 module theq(q,qbar,d1,clk);
 input d1,clk;
 output q,qbar;
@@ -174,7 +174,7 @@ nand(H,clk,x);
 nand(q,H,qbar);
 nand(qbar,P,q);
 endmodule 
-
+```
 ### RTL LOGIC FOR FLIPFLOPS 
 
 ![ss-3](https://user-images.githubusercontent.com/93427208/168048672-39d17f9f-d101-435a-a1f9-8b24e1ef9c24.png)
@@ -184,7 +184,7 @@ endmodule
 ![ss-3 1](https://user-images.githubusercontent.com/93427208/168048883-99578a63-3d04-47f0-b5d0-46e7f3c53c95.png)
 
 ### PROGRAM 4
-
+```
 
 module theq(t,qbar,q,clk);
 input t,clk;
@@ -195,7 +195,7 @@ nand(n2,clk,t,q);
 nand(q,n1,qbar);
 nand(qbar,n2,q);
 endmodule
-
+```
 ### RTL LOGIC FOR FLIPFLOPS
 
 ![ss-4](https://user-images.githubusercontent.com/93427208/168049356-18c2deac-86e4-4fb3-9d91-0c97040e977d.png)
